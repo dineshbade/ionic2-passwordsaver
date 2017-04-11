@@ -1,0 +1,51 @@
+io<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{headerTitle}}
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+ 
+<ion-content padding>
+  
+  <ion-list>
+  <form [formGroup]="addForm"  (ngSubmit)="logForm();dismiss();">
+
+      
+      <ion-input type="text" formControlName="id" hidden></ion-input>
+   
+    <ion-item>
+      <ion-label floating>Title</ion-label>
+      <ion-input type="text" formControlName="type"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" formControlName="username"></ion-input>
+    </ion-item>
+    <div formGroupName="passwords">
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Re-password</ion-label>
+      <ion-input type="password" formControlName="repassword"></ion-input>
+    </ion-item>
+    <div class="alert-box">
+         <span *ngIf="!passwords.valid && (password.touched || repassword.touched)" class="alert-text ">Passwords don't match.</span>
+       </div>
+     </div>
+     <div padding>
+      <button ion-button color="primary" [disabled]="!addForm.valid" block>Submit</button>
+    </div>
+    </form>
+  </ion-list>
+  
+</ion-content>

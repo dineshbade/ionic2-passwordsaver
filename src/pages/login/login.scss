@@ -1,0 +1,90 @@
+@import "variables.css";
+
+page-login {
+	
+    
+   
+      ion-row {
+        align-items: center;
+        text-align: center;
+      }
+ 
+      ion-item {
+         
+          padding-left: 10px !important;
+          margin-bottom: 10px;
+          background-color: #f6f6f6;
+          opacity: 0.7;
+          font-size: 0.9em;
+      }
+ 
+      ion-list {
+          margin: 0;
+      }
+ 		.login-box{
+ 			position: relative;
+ 		}
+    .logo-margin{
+      margin-left: 85px;
+    }
+      .login-button {
+          width: 100%;
+          border-radius: 30px;
+          font-size: 0.9em;
+          border: 1px solid #fff;
+          background-color: #39acdc;
+      }
+
+      .googleplus-btn{
+        width:80%;
+
+      	background-color: #e94437;
+
+      }
+      .googleplus-btn:hover{
+      	background-color: #f36a60 !important;
+      }
+      .facebook-btn{
+        width:80%;
+
+      	background-color: #1e4587;
+
+      }
+      .facebook-btn:hover{
+      	background-color: #5f7bab !important;
+      }
+      .github-btn{
+        width:80%;
+        background-color: #1e4587;
+
+      }
+      .github-btn:hover{
+        background-color: #5f7bab !important;
+      }
+ 
+  .twitter-btn{
+        width:80%;
+
+        background-color: #1969ef;
+
+      }
+      .twitter-btn:hover{
+        background-color: #5f7bab !important;
+      }
+  	.login-divider{
+      margin:4px;
+  		text-align: center;
+  		font-size: 1.5em;
+  	}
+    .register{
+      margin:3px;
+    }
+    .register:hover{
+      cursor: pointer;
+    }
+
+.logo-left{
+  font-size: 30px;
+  padding:1px;
+}
+}

@@ -1,0 +1,39 @@
+<!--
+  Generated template for the Profile page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-shadow>
+
+  <ion-navbar transparent>
+    <ion-title>profile</ion-title>
+    <ion-buttons end >
+    	<button ion-button (click)="presentActionSheet()"><ion-icon name="create"></ion-icon></button>
+    	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="profile-header">
+	<div class="profile-img" >
+    <img [src]="imagePath" alt="" *ngIf="(imagePath!=null)"> 
+   <!-- <img  [src]="base64Image" *ngIf="base64Image" /> -->
+   <div class="profile-icon" *ngIf="(imagePath!=null)">
+   <button ion-button color="light" round>Upload
+        
+    </button>
+    </div>
+		<!-- <img src="assets/image/profile.jpg" *ngIf="base64Image == null"/> -->
+	</div>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="leaf" item-left></ion-icon>
+          Herbology
+        <ion-icon name="rose" item-right></ion-icon>
+      </ion-item>
+  </ion-list>
+	 
+
+</ion-content>

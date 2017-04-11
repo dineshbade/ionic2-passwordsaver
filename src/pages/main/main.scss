@@ -1,0 +1,66 @@
+page-main {
+			.menu{
+					border-bottom: 1px solid black;
+					height: 200px;
+				}
+				.picture-box{
+					width:100%;
+					margin:0px;
+					position:absolute;
+				}
+				/* .picture{
+					height:142px;
+					width:190px;
+					margin: 15px auto 0px auto;
+					padding:10px;
+					background-repeat: no-repeat;
+					  background-position: center center;
+					  background-size: cover;
+					
+				} */
+				img{
+						border-radius: 50%;
+					}
+				.clearfix{
+					clear:both;
+				}
+		
+		.user-detail{
+			position:absolute;
+			width:100%;
+			margin-top:5px;
+			ion-row{
+				ion-col{
+					padding: 0px 5px 0px 15px;
+					.item-md{
+						padding-left:5px;
+					}
+					ion-item{
+						ion-label{
+							
+								margin:0px !important;
+									p{
+										color:#f55454;
+									}				}
+					}
+					/* .label-md{
+						margin:0px;
+					} */
+				}
+			}
+
+			
+		}
+
+		ion-list{
+			border-bottom: 1px solid black;
+		}
+
+		.item-profile {
+			  height: 150px;
+			  .item-avatar > img:first-child {
+			    width: 100px !important;
+			    height: 100px !important;
+  							}
+					}
+}

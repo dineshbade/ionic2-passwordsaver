@@ -1,0 +1,54 @@
+<ion-menu [content]="mycontent" >
+
+	<ion-content>
+		<div class="menu">
+			<div class="picture-box">
+				<div class="picture">
+					<ion-item class="item-profile">
+						  <div class="item-avatar">
+						    <img src="assets/image/d.jpg">
+						  </div>
+						</ion-item>
+						
+							
+						
+						
+					
+				</div>
+			<div class="clearfix"></div>
+			<div class="user-detail">
+				<ion-row>
+					<ion-col>
+						<ion-item (click)="profile()">
+							 <h2>Dinesh Bade</h2>
+							<p>dineshbade1992@gmail.com</p>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+			</div>
+			</div>
+			
+
+		</div>
+		<ion-list>
+			 <button ion-item (click)="logout()" ><ion-icon name="power" item-left ></ion-icon>
+				Logout
+			</button>
+		</ion-list>
+		
+	</ion-content>
+	
+
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav> 
+
+<!-- <ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <p>some menu content, could be list items</p>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav> -->

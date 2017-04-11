@@ -1,0 +1,64 @@
+<ion-content class="login-content" padding>
+ 
+  <div class="login-box">
+    <form [formGroup]="loginForm" method="post" (ngSubmit)="getLogin()" >
+      <ion-row>
+        <ion-col>
+          <ion-list >
+            
+            <ion-item> 
+             <ion-label floating>email</ion-label>
+              <ion-input type="text"  formControlName="email" name="email" floating ></ion-input>
+            </ion-item>
+            
+            <ion-item>
+             <ion-label floating>password</ion-label>
+              <ion-input type="password"  formControlName="password" name="password" floating ></ion-input>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full>Login</button>
+          <!-- <button ion-button class="register-btn"  clear ><ion-icon ios="logo-facebook" md="logo-facebook" item-left></ion-icon>Create New Account</button> -->
+        </ion-col>
+      </ion-row>
+      
+    </form>
+   
+     <ion-row>
+        <ion-col>
+          <p class="register">
+          <a (click)="registerPage()">Register Here</a>
+          </p>
+        </ion-col>
+      </ion-row>
+    	<p class="login-divider">OR</p>
+    	<ion-row class="logo-margin">
+    		<ion-col width-20>
+        <button ion-button class="github-btn" half >
+          <div class="logo-left">
+            <ion-icon ios="logo-github" md="logo-github" icon-left></ion-icon>
+          </div>
+        </button>
+        </ion-col>
+        <ion-col  width-20>
+         <button ion-button class="twitter-btn" half ><div class="logo-left"><ion-icon ios="logo-twitter" md="logo-twitter" icon-left></ion-icon></div></button>
+         </ion-col>
+         </ion-row>
+         <ion-row class="logo-margin">
+         <ion-col  width-20 >
+    			<button ion-button class="facebook-btn"  half (click)="facebookLogin()"><div class="logo-left"><ion-icon ios="logo-facebook" md="logo-facebook" icon-left></ion-icon></div></button>
+          </ion-col>
+          <ion-col width-20 >
+    			<button ion-button class="googleplus-btn" half ><div class="logo-left"><ion-icon ios="logo-googleplus" md="logo-googleplus" icon-left></ion-icon></div></button>
+    		
+        
+        </ion-col>
+    	</ion-row>
+
+  </div>
+</ion-content>

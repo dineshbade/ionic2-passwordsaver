@@ -1,0 +1,52 @@
+page-profile {
+		.image-save{
+			z-index: 999;
+		}
+	img
+	{
+		
+	 object-fit: cover; /* Scale the image - Center and crop image*/
+    object-position: center; /* Center the image within the element - Center and crop image*/	
+
+	}
+	.profile-img{
+		position:relative;
+		top:0px;
+		left:0px;
+	}
+
+	.profile-icon{
+		position:absolute;
+		left:279px;
+		top:229px;
+			.button-md{
+				height:15px;
+				width:70px;
+				font-size:1.2rem;
+			}
+	}
+.header-md::after{
+		background-image:none;
+	}
+	.profile-header{
+		background-color: #ccc;
+		height:250px;
+	}
+	
+		ion-content{
+				.scroll-content{
+					margin-top:0px !important;
+				}
+				margin-top:0px !important;
+			
+			.profile-img{
+				width:100% !important;
+				height:100% !important;
+			}
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+	
+}

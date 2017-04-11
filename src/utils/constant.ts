@@ -1,0 +1,1 @@
+export const API_URI:string="192.168.1.12:3000/api";

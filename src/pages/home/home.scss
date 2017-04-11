@@ -1,0 +1,30 @@
+page-home {
+
+
+	ion-list{
+		ion-item{
+
+			
+
+			.item-list-2{
+				height: 40px;
+			}
+			button{
+				.icon-green{
+					color:#32db64;
+				}
+				.icon-red{
+					color:#f53d3d;
+				}
+			}
+		}
+	}
+
+	ion-content{
+		ion-fab{
+			.fab{
+				margin-right:20px;
+			}
+		}
+	}
+}
